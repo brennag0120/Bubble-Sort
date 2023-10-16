@@ -33,10 +33,9 @@ public class Assignment_6_2300 {
     public static int[] readFileToArray(String filename) throws FileNotFoundException{
         Scanner scanner= new Scanner(new File(filename));
         ArrayList<Integer> arrayList= new ArrayList<>();
-            //int i=0;
+           
 
         while(scanner.hasNextLine()){
-            //System.out.println(i ++);
             arrayList.add(Integer.parseInt(scanner.nextLine()));
 
         }
@@ -47,10 +46,6 @@ public class Assignment_6_2300 {
         }
         return array;
     }
-
-    //public static void bubbleSort(int [] array){
-      // Arrays.sort(array,Collections.reverseOrder());
-        //bubbleSort(array,0,array.length);
     
 
     public static void bubbleSort(int[] array){
@@ -63,18 +58,6 @@ public class Assignment_6_2300 {
                 }
             }
         }
-        //if(end - start <= 1){
-          //  return;
-       // }
-        
-       // for(int i=start; i< end; i++){
-           // if(array[i] > array[i+1]){
-               // int temp=array[i];
-              //  array[i]=array[i+1];
-               // array[i+1]=temp;
-          //  }
-       // }
-       // bubbleSort(array,start,end-1);
     }
 
     public static void main(String[] args) throws Exception{
